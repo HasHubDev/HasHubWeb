@@ -15,7 +15,7 @@ export function SocialProof() {
         </p>
 
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-          {technologies.map((tech, index) => (
+          {technologies.map((tech) => (
             <div
               key={tech.name}
               className="flex items-center space-x-3 text-muted-foreground hover:text-foreground transition-colors duration-300"

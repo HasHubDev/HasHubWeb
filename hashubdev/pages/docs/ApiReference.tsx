@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FileText, Network, Search, Copy, Check } from "lucide-react";
+import { Search, Copy, Check } from "lucide-react";
 
 export function ApiReference() {
   const [selectedEndpoint, setSelectedEndpoint] = useState('doc-process');

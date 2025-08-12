@@ -5,7 +5,6 @@ import {
   Copy, 
   Eye, 
   EyeOff, 
-  BarChart3, 
   TrendingUp, 
   Clock, 
   CheckCircle,

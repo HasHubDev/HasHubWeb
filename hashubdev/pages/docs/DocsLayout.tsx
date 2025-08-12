@@ -16,7 +16,6 @@ import {
   ChevronDown,
   ChevronRight
 } from "lucide-react";
-import { Button } from "../../components/ui/button";
 
 interface NavItem {
   label: string;
