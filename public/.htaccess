@@ -1,0 +1,21 @@
+# Set correct MIME types for JavaScript modules
+AddType application/javascript .js .mjs
+
+# Enable CORS for all origins
+Header add Access-Control-Allow-Origin "*"
+Header add Access-Control-Allow-Methods "GET, POST, OPTIONS, DELETE, PUT"
+Header add Access-Control-Allow-Headers "Content-Type, Authorization"
+
+# Handle React Router
+RewriteEngine On
+RewriteBase /HasHubWeb/
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /HasHubWeb/index.html [L]
+
+# Cache static assets
+<FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg)$">
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+</FilesMatch>

@@ -14,7 +14,7 @@ import { Guides } from './pages/docs/Guides';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/HasHubWeb">
       <Routes>
         {/* Public pages */}
         <Route path="/" element={<HomePage />} />
