@@ -76,9 +76,9 @@ export function ApiReference() {
   };
 
   return (
-    <div className="h-full grid grid-cols-12 bg-background">
+    <div className="h-full flex bg-background">
       {/* Left Sidebar - API Navigation */}
-      <div className="col-span-3 border-r border-border bg-card">
+      <div className="w-80 border-r border-border bg-card">
         <div className="p-6">
           <div className="mb-6">
             <h1 className="text-2xl font-bold text-foreground mb-2">
@@ -185,7 +185,7 @@ export function ApiReference() {
       </div>
 
       {/* Main Content */}
-      <div className="col-span-6 flex">
+      <div className="flex-1 flex">
         <div className="flex-1 overflow-auto">
           <div className="max-w-5xl mx-auto p-8">
             {/* Header */}
@@ -308,7 +308,7 @@ export function ApiReference() {
         </div>
 
         {/* Right Sidebar - Quick Reference */}
-        <div className="col-span-3 border-l border-border bg-card p-6">
+        <div className="w-80 border-l border-border bg-card p-6">
           <div className="sticky top-6 space-y-6">
             {/* Status Indicators */}
             <div>
